@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1 class="logo">MyPortfolio</h1>
+      </div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact" class="cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero container" id="home" aria-label="Introduction">
+      <div class="hero-text">
+        <h2>Hi, I am</h2>
+        <h3 class="name">John Doe</h3>
+        <p class="role">Full Stack Developer <span class="role-animated">| JavaScript • CSS • React</span></p>
+        <p class="hero-desc">
+          I build responsive web apps and clean UI designs. I love converting ideas into real products with good UX.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn">View Projects</a>
+          <a href="#contact" class="btn btn-outline">Hire Me</a>
+        </div>
+      </div>
+      <div class="hero-image" aria-hidden="true">
+        <!-- placeholder circle avatar -->
+        <div class="avatar">
+          <svg viewBox="0 0 100 100" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+            <circle cx="50" cy="30" r="18" fill="var(--accent)"></circle>
+            <rect x="18" y="55" rx="10" ry="10" width="64" height="34" fill="var(--muted)"></rect>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about container">
+      <h4 class="section-title">About Me</h4>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm a web developer focusing on front-end and modern JavaScript frameworks. I enjoy making
+            fast, accessible, and responsive interfaces. Currently learning more about web performance and animations.
+          </p>
+          <ul>
+            <li>Based in India</li>
+            <li>Available for freelance & internships</li>
+            <li>Open to collaborative projects</li>
+          </ul>
+        </div>
+        <div class="about-stats">
+          <div class="stat">
+            <h5>2+</h5>
+            <p>Projects</p>
+          </div>
+          <div class="stat">
+            <h5>1</h5>
+            <p>Internship</p>
+          </div>
+          <div class="stat">
+            <h5>Daily</h5>
+            <p>Learning</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="skills container">
+      <h4 class="section-title">My Skills</h4>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h6>HTML</h6>
+          <p>Semantic markup & accessibility</p>
+        </div>
+        <div class="skill-card">
+          <h6>CSS</h6>
+          <p>Flexbox, Grid, animations</p>
+        </div>
+        <div class="skill-card">
+          <h6>JavaScript</h6>
+          <p>ES6+, DOM, async</p>
+        </div>
+        <div class="skill-card">
+          <h6>React</h6>
+          <p>Components & hooks</p>
+        </div>
+        <div class="skill-card">
+          <h6>Git</h6>
+          <p>Version control & workflows</p>
+        </div>
+        <div class="skill-card">
+          <h6>Responsive</h6>
+          <p>Mobile-first design</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="projects container">
+      <h4 class="section-title">My Projects</h4>
+      <div class="projects-grid">
+        <article class="project-card">
+          <h5>Project 1</h5>
+          <p>A responsive landing page built with HTML & CSS Grid.</p>
+          <div class="project-actions">
+            <a href="#" class="small-btn">Demo</a>
+            <a href="#" class="small-btn">Code</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <h5>Project 2</h5>
+          <p>A small React app with routing and state management.</p>
+          <div class="project-actions">
+            <a href="#" class="small-btn">Demo</a>
+            <a href="#" class="small-btn">Code</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <h5>Project 3</h5>
+          <p>Interactive quiz app using vanilla JavaScript (console + UI).</p>
+          <div class="project-actions">
+            <a href="#" class="small-btn">Demo</a>
+            <a href="#" class="small-btn">Code</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact container">
+      <h4 class="section-title">Contact Me</h4>
+      <form class="contact-form" action="#" method="post" aria-label="Contact form">
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required>
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="your@mail.com" required>
+        </div>
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Write your message..." required></textarea>
+        </div>
+        <div class="form-row form-actions">
+          <button type="submit" class="btn">Send Message</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> John Doe. All rights reserved.</p>
+      <div class="socials" aria-hidden="true">
+        <a href="#" title="GitHub">GitHub</a>
+        <a href="#" title="LinkedIn">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // small JS for current year and simple nav highlight
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // smooth scroll (optional)
+    document.querySelectorAll('.main-nav a').forEach(a => {
+      a.addEventListener('click', (e) => {
+        const target = a.getAttribute('href');
+        if (target.startsWith('#')) {
+          e.preventDefault();
+          document.querySelector(target).scrollIntoView({behavior: 'smooth'});
+        }
+      });
+    });
+  </script>
+</body>
+</html>
